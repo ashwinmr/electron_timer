@@ -1,0 +1,9 @@
+{
+  "name": "electron_blank",
+  "version": "0.0.0",
+  "description": "Electron_Blank",
+  "main": "app.js",
+  "author": {
+    "name": "ashwin"
+  }
+}

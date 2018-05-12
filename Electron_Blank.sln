@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Electron_Blank", "Electron_Blank.njsproj", "{886A83C0-A85C-4672-8EDB-8428A03D4D2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886A83C0-A85C-4672-8EDB-8428A03D4D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886A83C0-A85C-4672-8EDB-8428A03D4D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886A83C0-A85C-4672-8EDB-8428A03D4D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886A83C0-A85C-4672-8EDB-8428A03D4D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E2770B6-69A0-447F-87C9-0E688939AE69}
+	EndGlobalSection
+EndGlobal
