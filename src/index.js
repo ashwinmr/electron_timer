@@ -48,14 +48,12 @@ function Start() {
 function Play_Pause() {
     if (Paused) {
         Paused = false
-        Play_Pause_Button.style.background = 'url(../assets/images/pause.png) no-repeat'
-        Play_Pause_Button.style.backgroundPosition = 'center'
+        Play_Pause_Button.style.backgroundImage = 'url(../assets/images/pause.png)'
         Start()
     }
     else {
         Paused = true
-        Play_Pause_Button.style.background = 'url(../assets/images/play.png) no-repeat'
-        Play_Pause_Button.style.backgroundPosition = 'center'
+        Play_Pause_Button.style.backgroundImage = 'url(../assets/images/play.png)'
     }
 }
 
