@@ -1,0 +1,38 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width:100%;
+    margin:0;
+    display:table;
+    background:#ff6a00;
+}
+
+#timer {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #ffd800;
+}
+
+#play_pause_button {
+    display: table-cell;
+    vertical-align: middle;
+    background: url('../images/play.png') no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+#reset_button {
+    display: table-cell;
+    vertical-align: middle;
+    background: url('../images/reset.png') no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}

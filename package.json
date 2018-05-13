@@ -1,9 +1,17 @@
 {
-  "name": "electron_blank",
-  "version": "0.0.0",
-  "description": "Electron_Blank",
-  "main": "app.js",
-  "author": {
-    "name": "ashwin"
-  }
+    "name": "electron_timer",
+    "version": "1.0.0",
+    "description": "Electron_Timer",
+    "main": "main.js",
+    "author": "ashwin",
+    "scripts": {
+        "start": "electron .",
+        "package": "electron-packager . --asar=true --overwrite=true"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^2.0.0",
+        "electron-packager": "^12.0.2"
+    }
 }
