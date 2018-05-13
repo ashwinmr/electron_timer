@@ -1,20 +1,27 @@
 ﻿<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <title></title>
 </head>
+
 <body>
-    <button id="reset_button"></button>
-    <div id="timer">
+    <div id="reset_container">
+        <button id="reset_button"></button>
+    </div>
+    <div id="timer_container">
         <input id="minutes" type="number" min="0" max="60" value="00" size="2" />
         <span id="separator">:</span>
         <input id="seconds" type="number" min="0" max="59" value="00" size="2" />
     </div>
-    <button id="play_pause_button"></button>
-
+    <div id="play_pause_container">
+        <button id="play_pause_button"></button>
+    </div>
+    
     <script src="index.js"></script>
 </body>
+
 </html>
