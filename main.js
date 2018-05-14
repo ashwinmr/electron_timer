@@ -10,7 +10,7 @@ app.on('ready', function createWindow() {
     // Create the browser window.
     win = new BrowserWindow({
         title: "Electron_Timer",
-        icon: './assets/icons/main.png',
+        icon: path.join(__dirname, 'assets', 'icons', 'main.ico'),
         resizable: false,
         width: 400,
         height: 125
@@ -20,7 +20,7 @@ app.on('ready', function createWindow() {
     win.setMenu(null)
 
     // Create a tray icon
-    tray = new Tray('./assets/icons/main.png')
+    tray = new Tray(path.join(__dirname, 'assets', 'icons', 'main.ico'))
 
     // Create a conext menu for the tray
     const tray_menu = Menu.buildFromTemplate([{
@@ -64,4 +64,13 @@ app.on('ready', function createWindow() {
 
     // When the timer end is received from index page, show the window
     ipc.on('timer_end', () => { win.show() })
+})
+
+// Quit when all windows are closed.
+app.on('window-all-closed', () => {
+    // On macOS it is common for applications and their menu bar
+    // to stay active until the user quits explicitly with Cmd + Q
+    if (process.platform !== 'darwin') {
+        app.quit()
+    }
 })

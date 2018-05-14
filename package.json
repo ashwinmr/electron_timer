@@ -6,7 +6,7 @@
     "author": "ashwin",
     "scripts": {
         "start": "electron .",
-        "package": "electron-packager . --asar=true --overwrite=true --icon=assets/icons/main.png"
+        "package": "electron-packager . --asar --overwrite=true --icon=assets/icons/main.ico"
     },
     "keywords": [],
     "license": "ISC",
