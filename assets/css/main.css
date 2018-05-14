@@ -1,6 +1,6 @@
 ﻿html {
     height: 100%;
-    background-color: grey;
+    background-color: #ff6a00;
 }
 
 body{
@@ -14,14 +14,27 @@ body{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: 30%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #ffd800;
+    font-size: 50px;
 }
 
 input{
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-size: inherit;
     background-color:transparent;
-    cursor:text;
     border:none;
     outline:none;
+    padding:0;
+}
+
+/* Remove spin buttons */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 #minutes{
@@ -33,40 +46,37 @@ input{
 }
 
 button {
-    background-color: transparent;
+    background-color: #ffd800;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
     border: none;
     outline: none;
-    border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin: 5px;
 }
 
     button:hover {
-        background-color: rgba(110, 244, 12, 0.42);
-        box-shadow: 0 0 10px 3px rgba(110, 244, 12, 0.42);
+        background-color:#00a2ff;
     }
 
 #reset_container{
     display: table-cell;
     vertical-align: middle;
-    width:30%;
 }
 
 #reset_button {
-    background-image: url('../images/reset.png');
+    -webkit-mask-image: url('../images/reset.png');
     float:right;
 }
 
 #play_pause_container{
     display: table-cell;
     vertical-align: middle;
-    width:30%;
 }
 
 #play_pause_button {
-    background-image: url('../images/play.png');
+    -webkit-mask-image: url('../images/play.png');
     float:left;
 }
