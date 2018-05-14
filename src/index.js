@@ -1,8 +1,9 @@
-﻿const { BrowserWindow } = require('electron').remote
+﻿const electron = require('electron')
+const ipc = electron.ipcRenderer
 const path = require('path')
 const url = require('url')
 
-var Reset_Val = 10
+var Reset_Val = 30
 var Minutes = 0
 var Seconds = 0
 var Minutes_Elem = document.getElementById("minutes")
@@ -42,6 +43,7 @@ function Reset() {
 
 function End() {
     Play_Pause()
+    ipc.send('timer_end')
 }
 
 function Update() {
