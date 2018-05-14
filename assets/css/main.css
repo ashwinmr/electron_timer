@@ -3,14 +3,17 @@
     background-color: #ff6a00;
 }
 
-body{
+body {
     height: 100%;
-    width:100%;
+    width: 100%;
     margin: 0;
     display: table;
 }
 
-#timer_container{
+
+/* The main constainer for timer numbers */
+
+#timer_container {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -20,30 +23,38 @@ body{
     font-size: 50px;
 }
 
-input{
+
+/* All inputs used in the timer */
+
+input {
     font-family: inherit;
     font-weight: inherit;
     color: inherit;
     font-size: inherit;
-    background-color:transparent;
-    border:none;
-    outline:none;
-    padding:0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
 }
 
-/* Remove spin buttons */
+
+/* Remove spin buttons from input boxes */
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
-#minutes{
+#minutes {
     text-align: right;
 }
 
-#seconds{
-    text-align:left;
+#seconds {
+    text-align: left;
 }
+
+
+/* All buttons . Mask is used to set the icon */
 
 button {
     background-color: #ffd800;
@@ -57,26 +68,29 @@ button {
     margin: 5px;
 }
 
-    button:hover {
-        background-color:#00ccff;
-    }
 
-#reset_container{
+/* All buttons when hovered over */
+
+button:hover {
+    background-color: #00ccff;
+}
+
+#reset_container {
     display: table-cell;
     vertical-align: middle;
 }
 
 #reset_button {
     -webkit-mask-image: url('../images/reset.png');
-    float:right;
+    float: right;
 }
 
-#play_pause_container{
+#play_pause_container {
     display: table-cell;
     vertical-align: middle;
 }
 
 #play_pause_button {
     -webkit-mask-image: url('../images/play.png');
-    float:left;
+    float: left;
 }

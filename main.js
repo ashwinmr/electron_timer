@@ -4,62 +4,64 @@ const ipc = electron.ipcMain
 const path = require('path')
 const url = require('url')
 
-let win
+// Start the program when app is ready
+app.on('ready', function createWindow() {
 
-function createWindow() {
     // Create the browser window.
-    win = new BrowserWindow({ 
-        title: " ",
-        icon:'./assets/icons/main.png', 
-        resizable: false, 
-        width: 400, 
-        height: 125 
+    win = new BrowserWindow({
+        title: "Electron_Timer",
+        icon: './assets/icons/main.png',
+        resizable: false,
+        width: 400,
+        height: 125
     })
 
+    // Remove the menu bar
+    win.setMenu(null)
+
+    // Create a tray icon
     tray = new Tray('./assets/icons/main.png')
 
-    const ctxMenu = Menu.buildFromTemplate([
-        {
-            label:'Restore',
-            click(){
+    // Create a conext menu for the tray
+    const tray_menu = Menu.buildFromTemplate([{
+            label: 'Restore',
+            click() {
                 win.show()
             }
         },
         {
-            label:'Quit',
-            click(){
+            label: 'Quit',
+            click() {
                 win.close()
             }
         }
     ])
 
-    tray.setContextMenu(ctxMenu)
+    // Set the tray menu and tooltip
+    tray.setContextMenu(tray_menu)
     tray.setToolTip('Electron_Timer')
 
-    // and load the index.html of the app.
+    // Load the start page for the app
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'src', 'index.html'),
         protocol: 'file:',
         slashes: true
     }))
 
-    // Remove menu bar
-    win.setMenu(null)
-
-    // Open the DevTools.
+    // Open the DevTools if required
     // win.webContents.openDevTools()
 
-    win.on('minimize',function(event){
+    // Hide the window when minimized
+    win.on('minimize', function(event) {
         event.preventDefault();
         win.hide();
     });
 
-    tray.on('double-click',()=>{
+    // Show the window when the tray icon is double clicked
+    tray.on('double-click', () => {
         win.show()
     })
 
-    ipc.on('timer_end',()=>{win.show()})
-}
-
-app.on('ready', createWindow)
-
+    // When the timer end is received from index page, show the window
+    ipc.on('timer_end', () => { win.show() })
+})
