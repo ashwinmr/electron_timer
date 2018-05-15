@@ -1,10 +1,12 @@
 ﻿This is a simple timer made using only electron, html, css and javascript.
 
-Features:
-- Play, pause, restart
-- Manual time entry
-- Minimize to tray
+![Screenshot](assets/screenshots/main.PNG)
 
-Running instructions:
-- npm install
-- npm start
+#Features:
+* Play, pause, restart
+* Manual time entry
+* Minimize to tray
+
+#Running instructions:
+1. npm install
+2. npm start
