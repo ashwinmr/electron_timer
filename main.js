@@ -63,7 +63,12 @@ app.on('ready', function createWindow() {
     })
 
     // When the timer end is received from index page, show the window
-    ipc.on('timer_end', () => { win.show() })
+    // Set it always on top and then disable on top after 1 seconds
+    ipc.on('timer_end', () => {
+        win.show()
+        win.setAlwaysOnTop(true)
+        setTimeout(() => { win.setAlwaysOnTop(false) }, 1000)
+    })
 })
 
 // Quit when all windows are closed.
