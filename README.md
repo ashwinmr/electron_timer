@@ -2,11 +2,13 @@
 
 ![Screenshot](assets/screenshots/main.PNG)
 
-#Features:
+Features:
+===
 * Play, pause, restart
 * Manual time entry
 * Minimize to tray
 
-#Running instructions:
+Running instructions:
+===
 1. npm install
 2. npm start
