@@ -4,3 +4,7 @@ Features:
 - Play, pause, restart
 - Manual time entry
 - Minimize to tray
+
+Running instructions:
+- npm install
+- npm start
