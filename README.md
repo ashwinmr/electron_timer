@@ -1,6 +1,6 @@
 ﻿This is a simple timer made using only electron, html, css and javascript.
 
-![Screenshot](assets/screenshots/main.PNG)
+![Screenshot](assets/screenshots/main.png)
 
 Features:
 ===
