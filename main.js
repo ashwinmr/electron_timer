@@ -12,7 +12,7 @@ app.on('ready', function createWindow() {
         title: "Electron_Timer",
         icon: path.join(__dirname, 'assets', 'icons', 'main.ico'),
         resizable: false,
-        width: 400,
+        width: 450,
         height: 125
     })
 

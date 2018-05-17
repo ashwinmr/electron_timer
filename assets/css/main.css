@@ -8,6 +8,7 @@ body {
     width: 100%;
     margin: 0;
     display: table;
+    overflow:hidden;
 }
 
 
@@ -21,6 +22,7 @@ body {
     font-weight: bold;
     color: #ffd800;
     font-size: 50px;
+    white-space:nowrap;
 }
 
 
