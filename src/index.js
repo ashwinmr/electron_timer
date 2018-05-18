@@ -71,10 +71,10 @@ function Update() {
 function Play_Pause() {
     if (Paused) {
         Paused = false
-        Play_Pause_Button.style.setProperty('-webkit-mask-image', 'url(../assets/images/pause.png)')
+        Play_Pause_Button.style.setProperty('-webkit-mask-image', 'url(../assets/images/pause_button.svg)')
     } else {
         Paused = true
-        Play_Pause_Button.style.setProperty('-webkit-mask-image', 'url(../assets/images/play.png)')
+        Play_Pause_Button.style.setProperty('-webkit-mask-image', 'url(../assets/images/play_button.svg)')
     }
 }
 

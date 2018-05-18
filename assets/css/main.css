@@ -83,7 +83,7 @@ button:hover {
 }
 
 #reset_button {
-    -webkit-mask-image: url('../images/reset.png');
+    -webkit-mask-image: url('../images/reset_button.svg');
     float: right;
 }
 
@@ -93,6 +93,6 @@ button:hover {
 }
 
 #play_pause_button {
-    -webkit-mask-image: url('../images/play.png');
+    -webkit-mask-image: url('../images/play_button.svg');
     float: left;
 }
